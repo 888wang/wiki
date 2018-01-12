@@ -90,7 +90,12 @@
       </section>
 
     </div>
-
+    <p class="index_subtit">最新文章</p>
+　　<ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}" target="_blank">{{ post.title }}</a></li>
+　　　　{% endfor %}
+　　</ul>
     
   </body>
 </html>
