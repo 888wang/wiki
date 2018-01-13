@@ -28,13 +28,12 @@
     </div>
     <div class="wrapper">
       <section>
-        <div id="title">
-          <h1>98ERP房产中介管理系统</h1>
-          <p>帮助文档·产品使用手册</p>
+        <div id="title" style="margin:0">
+          <h1>{{ page.title }}</h1>
+          <p>{{ page.description }}</p>
           <hr>
-          <span class="credits left">{{ page.date | date:"%Y-%m-%d" }} <a href="javascript:history.back()">返回主页</a></span>
-          
-          <span class="credits right">{{ page.description }}</span>
+          <span class="credits left">{{ page.date | date:"%Y-%m-%d" }}&emsp;&emsp; <a href="https://98erp.github.io">返回主页</a></span>
+          <span class="credits right">联系电话：0311-89849098/0311-89849099</span>
         </div>
        </section>
        {{ content }}
